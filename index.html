@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>btc-threats</title>
+</head>
+<body>
+	<script>
+		var href = window.location.href
+		var splitIt = href.split('#')
+		var redirectHref = 'https://jwweatherman.com/#/bitcoinThreatModel'
+		if (splitIt.length > 2) {
+			redirectHref = redirectHref + '#' + splitIt.slice(2).join('#')
+		} 
+		window.location = redirectHref
+	</script>
+</body>
+</html>
